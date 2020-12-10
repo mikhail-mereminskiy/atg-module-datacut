@@ -581,7 +581,7 @@
    	<attribute name="schema" />
 	<sequential>
 		<exec executable="expdp" failonerror="true">
-			<arg line="${expdp.@{schema}}" ></arg>
+			<arg line="${expdp.@{schema}} COMPRESSION=NONE" ></arg>
 		</exec>  
 	</sequential>
 	</macrodef>
